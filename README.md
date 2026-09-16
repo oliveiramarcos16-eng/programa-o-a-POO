@@ -6,7 +6,7 @@ Este repositório é dedicado à entrega de todo o trabalho prático de **POO**.
 
 ## 🛠️ Tecnologias e Ferramentas
 * **Linguagem:** TypeScript
-* **Ambiente de Execução:** Node.js
+* **Ambiente de Execução:** One compiler
 * **Paradigma:** Orientação a Objetos
 * **Mentoria:** IA do Google (Auxiliar de Aprendizado)
 
@@ -22,18 +22,4 @@ Este repositório é dedicado à entrega de todo o trabalho prático de **POO**.
 * [ ] **05. Modificadores de Acesso:** *(Pendente)*
 
 ---
-
-## 🚀 Como Executar o Projeto
-
-1. Certifique-se de ter o [Node.js](https://nodejs.org) instalado.
-2. Instale as dependências para rodar TypeScript:
-   ```bash
-   npm install -g typescript ts-node
-   ```
-3. Execute o arquivo da atividade correspondente:
-   ```bash
-   ts-node src/01-classe-objeto.ts
-   ```
-
----
-Autor: [Seu Nome Completo]
+Autor: [Marcos Eduardo Santos de Oliveira]
