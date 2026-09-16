@@ -1,1 +1,19 @@
 
+class pessoa {
+    idade: number; 
+    nome: string;
+
+    constructor(idade: number, nome: string){
+        this.idade = idade;
+        this.nome = nome;
+
+    }
+}
+
+const minhaPessoa = new pessoa(14,"mary" );
+
+console.log(`nome: ${minhaPessoa.nome}`);
+console.log(`idade: ${minhaPessoa.idade}`);
+
+
+
