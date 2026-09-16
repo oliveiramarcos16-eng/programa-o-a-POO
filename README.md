@@ -15,7 +15,7 @@ Este repositório é dedicado à entrega de todo o trabalho prático de **POO**.
 ## 📋 Status das Atividades
 
 ### Parte 1 — Elementos da POO
-* [x] **01. Classe e Objeto:** Implementação da classe `Pessoa` para fixação de atributos e instanciação.
+* [x] **[01. Classe e Objeto](./src/01-classe-objeto.ts):** Implementação da classe `Pessoa` para fixação de atributos e instanciação.
 * [ ] **02. Construtor:** *(Pendente)*
 * [ ] **03. Métodos:** *(Pendente)*
 * [ ] **04. Atributo `this`:** *(Pendente)*
