@@ -1,46 +1,21 @@
-/**
- * Questão 5: Modificadores de acesso
- * Enunciado: Crie uma classe ContaBancaria com o atributo saldo como privado. 
- * Implemente os métodos depositar(valor) e consultarSaldo(), sem permitir que o saldo seja alterado diretamente.
- */
-
-class ContaBancaria {
-    // O modificador 'private' impede que o saldo seja alterado de fora da classe (ex: conta.saldo = 100000)
+class contaBancaria{
     private saldo: number;
 
-    constructor(saldoInicial: number) {
-        this.saldo = saldoInicial;
+    constructor(){
+        this.saldo = 0
     }
 
-    // Método público para alterar o saldo de forma controlada e segura
-    depositar(valor: number): void {
-        if (valor > 0) {
-            this.saldo += valor;
-            console.log(`✅ Depósito de R$${valor.toFixed(2)} realizado com sucesso!`);
-        } else {
-            console.log("❌ Valor de depósito inválido.");
-        }
+    depositar(valor:number): void{
+        this.saldo += valor
     }
 
-    // Método público para ler o saldo sem permitir alteração
-    consultarSaldo(): number {
-        return this.saldo;
+    consultarConta(): number{
+        return this.saldo
     }
 }
 
-const minhaConta = new ContaBancaria(500.00);
+const conta1 = new contaBancaria();
 
-console.log("=========================================");
-console.log("         OPERAÇÕES BANCÁRIAS             ");
-console.log("=========================================");
-console.log(`Saldo Inicial: R$${minhaConta.consultarSaldo().toFixed(2)}`);
+conta1.depositar(500);
 
-// Realizando um depósito
-minhaConta.depositar(250.50);
-
-// Consultando o saldo atualizado
-console.log(`Saldo Atualizado: R$${minhaConta.consultarSaldo().toFixed(2)}`);
-console.log("=========================================");
-
-// Nota técnica: Se tentássemos fazer 'minhaConta.saldo = 0;', o TypeScript geraria um erro de compilação.
-
+console.log("valor de conta:",conta1.consultarConta())
